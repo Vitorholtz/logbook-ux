@@ -1,0 +1,44 @@
+.hero {
+
+    width: 120rem;
+    height: auto;
+    margin: 16rem auto;
+    display: flex;
+    
+    .hero-img {
+
+        display: flex;
+        width: 70%;
+
+        .img1, .img2 {
+
+            width: 50%;
+        }
+    
+    }
+
+    .description {
+
+        width: 30%;
+        margin-left: 2rem;
+        color: $primarygray;
+
+        .logo {
+
+            width: 16rem;
+        }
+
+        p {
+            font-size: 2.2rem;
+            line-height: 1.4; 
+            margin: 4rem 0;
+        }
+
+        ul {
+
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
+}
