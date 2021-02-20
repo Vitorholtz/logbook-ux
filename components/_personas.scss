@@ -1,0 +1,162 @@
+.personas {
+
+    width: 100vw;
+    height: auto;
+    padding: 5rem;
+    background-color: $tertiarygray;
+
+    .slider {
+
+        width:  80rem;
+        height: 80rem;
+        margin: auto;
+        background: rgb(255, 255, 255);
+        border-radius: 2rem 2rem 2rem 0rem;
+        box-shadow: 1px 10px 75px -20px rgba(0,0,0,0.4);
+        overflow: hidden;
+        position: relative;
+        z-index: 100;
+
+        .slides {
+
+            width: 500%;
+            height: 100%;
+            display: flex;
+
+            input {
+                display: none;
+                z-index: 100;
+                
+            }
+
+            .slide {
+
+                width: 20%;
+                transition: 1s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5rem;
+
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
+            // Manual navigation
+
+            #radio1:checked ~ .first {
+                margin-left: 0;
+            }
+            
+            #radio2:checked ~ .first {
+                margin-left: -20%;
+            }
+            
+            
+            #radio3:checked ~ .first {
+                margin-left: -40%;
+            }
+            
+            
+            #radio4:checked ~ .first {
+                margin-left: -60%;
+            }
+
+            #radio5:checked ~ .first {
+                margin-left: -80%;
+            }
+
+            // Auto navigation
+
+            .navigation-auto {
+    
+             position: absolute;
+             bottom: 3rem;
+             left: 40%;
+             display: flex;
+
+             div {
+
+             border: none;
+             background: $lightgray;
+             padding: 5px;
+             transition: 1s;
+
+            &:not(:last-child) {
+
+            margin-right: 2.6rem;
+
+        }
+
+    }
+ 
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+
+    background: $primarygreen ;
+    
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+
+    background: $primarygreen;
+}
+
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+
+    background: $primarygreen ;
+}
+
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+
+    background: $primarygreen ;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+
+    background: $primarygreen ;
+}
+
+.auto-btn1, .auto-btn2, .auto-btn3, .auto-btn4, .auto-btn5 {
+
+    cursor: crosshair;
+}
+
+}
+}
+}
+
+.personas-desire {
+
+    width: 60%;
+    margin: auto;
+    position: relative;
+
+    &::after {
+        content: '';
+        height: 100%;
+        width: 2px;
+        background-color: $tertiarygray;
+        position: absolute;
+        top: 0;
+        left: -4rem;
+    }
+
+   h2 {
+
+    font-size: 4rem;
+    margin: 12rem auto;
+    color: $secondarygreen;
+    
+    span {
+
+        color: $primarygreen;
+    }
+
+   }
+}   

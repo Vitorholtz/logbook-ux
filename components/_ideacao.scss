@@ -1,0 +1,40 @@
+.ideacao {
+
+    width: 100rem;
+    height: auto;
+    margin: 16rem auto;
+    display: flex;
+    flex-direction: column;
+    
+    h1 {
+
+        font-size: 4rem;
+        color: $primarygreen;
+
+        &:not(:first-child) {
+
+            margin-top: 6rem;
+        }
+    }
+
+
+    p {
+        font-size: 2.2rem;
+        line-height: 1.4;
+        color: $primarygray;
+        margin: 2rem 0;
+    }
+
+    img {
+
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
+    .storyboard-1, .storyboard-2, .storyboard-4 {
+
+        width: 56rem;
+    }
+
+
+}
