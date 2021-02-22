@@ -5,6 +5,15 @@
     height: auto;
     padding: 3rem 0rem;
     text-align: center;
+    display: none;
+    animation: reveal 1s forwards;
+
+    h1 {
+
+        font-size: 4rem;
+        color: $primarygreen;
+        margin-top: 4rem;
+    }
 
     h3 {
 
@@ -67,4 +76,9 @@
 
     }
   }
+}
+
+.prototipo-active {
+
+    display: block;
 }

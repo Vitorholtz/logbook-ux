@@ -183,6 +183,7 @@ header .header-container img {
 .hero .description ul {
   font-size: 2rem;
   font-weight: bold;
+  margin-left: 2.2rem;
 }
 
 .project-description {
@@ -247,13 +248,13 @@ header .header-container img {
   width: 100rem;
   height: auto;
   margin: 16rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: reveal 1s forwards;
+          animation: reveal 1s forwards;
 }
 
 .pesquisa h1 {
@@ -344,54 +345,69 @@ header .header-container img {
   color: #727D83;
 }
 
-.definicao {
-  width: 100rem;
-  height: auto;
-  margin: 16rem auto;
+.pesquisa-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.entrevistas {
+  width: 100rem;
+  height: auto;
+  margin: 16rem auto;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: reveal 1s forwards;
+          animation: reveal 1s forwards;
 }
 
-.definicao h1 {
+.entrevistas h1 {
   font-size: 4rem;
   color: #128360;
 }
 
-.definicao .usuarios {
+.entrevistas .usuarios {
   width: 48rem;
   margin: 2rem auto;
 }
 
-.definicao p {
+.entrevistas p {
   font-size: 2.2rem;
   line-height: 1.4;
   color: #727D83;
   margin: 2rem 0;
 }
 
-.definicao h3 {
+.entrevistas h3 {
   font-size: 3rem;
   line-height: 1.4;
   color: #128360;
   margin: 2rem 0;
 }
 
-.definicao ul {
+.entrevistas ul {
   font-size: 2.2rem;
   list-style-type: none;
   color: #727D83;
 }
 
+.entrevistas-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .personas {
   width: 100vw;
+  display: none;
   height: auto;
   padding: 5rem;
   background-color: #E5ECF0;
+  -webkit-animation: reveal 1s forwards;
+          animation: reveal 1s forwards;
 }
 
 .personas .slider {
@@ -509,6 +525,7 @@ header .header-container img {
 .personas-desire {
   width: 60%;
   margin: auto;
+  display: none;
   position: relative;
 }
 
@@ -532,17 +549,25 @@ header .header-container img {
   color: #128360;
 }
 
+.personas-active {
+  display: block;
+}
+
+.personas-desires-active {
+  display: block;
+}
+
 .ideacao {
   width: 100rem;
   height: auto;
   margin: 16rem auto 0rem auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: reveal 1s forwards;
+          animation: reveal 1s forwards;
 }
 
 .ideacao h1 {
@@ -594,6 +619,7 @@ header .header-container img {
   -webkit-box-shadow: -6px 6px 0px 0px #e5ecf0;
           box-shadow: -6px 6px 0px 0px #e5ecf0;
   padding: 2rem;
+  margin: 0 2rem;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -608,12 +634,27 @@ header .header-container img {
   margin-bottom: 0;
 }
 
+.ideacao-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .prototipo {
   width: 100vw;
   background-color: #E5ECF0;
   height: auto;
   padding: 3rem 0rem;
   text-align: center;
+  display: none;
+  -webkit-animation: reveal 1s forwards;
+          animation: reveal 1s forwards;
+}
+
+.prototipo h1 {
+  font-size: 4rem;
+  color: #128360;
+  margin-top: 4rem;
 }
 
 .prototipo h3 {
@@ -685,10 +726,17 @@ header .header-container img {
   width: 100%;
 }
 
+.prototipo-active {
+  display: block;
+}
+
 .teste-usabilidade {
   width: 100rem;
   height: auto;
   margin: 16rem auto;
+  display: none;
+  -webkit-animation: reveal 1s forwards;
+          animation: reveal 1s forwards;
 }
 
 .teste-usabilidade h1 {
@@ -726,11 +774,18 @@ header .header-container img {
   color: #727D83;
 }
 
+.teste-usabilidade-active {
+  display: block;
+}
+
 .ui {
   width: 100rem;
   height: auto;
   margin: 16rem auto;
   position: relative;
+  display: none;
+  -webkit-animation: reveal 1s forwards;
+          animation: reveal 1s forwards;
 }
 
 .ui h1 {
@@ -779,6 +834,102 @@ header .header-container img {
 
 .bottom-draw .personagens {
   width: 100%;
+}
+
+.ui-active {
+  display: block;
+}
+
+.final {
+  width: 100rem;
+  height: auto;
+  margin: 16rem auto;
+}
+
+.final h1 {
+  font-size: 4rem;
+  color: #128360;
+}
+
+.final p {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #727D83;
+  margin-bottom: 4rem;
+}
+
+.toggle {
+  width: 100vw;
+  height: 8rem;
+  background-color: #128360;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-bottom: 1px #2CBA8D solid;
+}
+
+.toggle:hover {
+  background-color: #2CBA8D;
+}
+
+.toggle .fas {
+  font-size: 2rem;
+  margin-left: 1rem;
+  -webkit-transform: translateY(0.4rem);
+          transform: translateY(0.4rem);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.toggle .fas-active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    -webkit-transform: translateY(50rem);
+            transform: translateY(50rem);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    -webkit-transform: translateY(50rem);
+            transform: translateY(50rem);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
 }
 
 @media only screen and (max-width: 1600px) {

@@ -1,9 +1,11 @@
 .personas {
 
     width: 100vw;
+    display: none;
     height: auto;
     padding: 5rem;
     background-color: $tertiarygray;
+    animation: reveal 1s forwards;
 
     .slider {
 
@@ -135,6 +137,7 @@
 
     width: 60%;
     margin: auto;
+    display: none;
     position: relative;
 
     &::after {
@@ -159,4 +162,14 @@
     }
 
    }
-}   
+}
+
+.personas-active {
+
+    display: block;
+}
+
+.personas-desires-active {
+
+    display: block;
+}

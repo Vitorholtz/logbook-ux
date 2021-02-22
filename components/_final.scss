@@ -1,0 +1,19 @@
+.final {
+
+    width: 100rem;
+    height: auto;
+    margin: 16rem auto;
+
+    h1 {
+
+        font-size: 4rem;
+        color: $primarygreen;
+    }
+
+    p {
+        font-size: 2.2rem;
+        line-height: 1.4;
+        color: $primarygray;
+        margin-bottom: 4rem;
+    }
+}

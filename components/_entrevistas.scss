@@ -1,10 +1,11 @@
-.definicao {
+.entrevistas {
 
     width: 100rem;
     height: auto;
     margin: 16rem auto;
-    display: flex;
+    display: none;
     flex-direction: column;
+    animation: reveal 1s forwards;
     
     h1 {
 
@@ -37,4 +38,9 @@
         list-style-type: none;
         color: $primarygray;
     }
+}
+
+.entrevistas-active {
+
+    display: flex;
 }

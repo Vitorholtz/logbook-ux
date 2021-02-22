@@ -3,6 +3,8 @@
     width: 100rem;
     height: auto;
     margin: 16rem auto;
+    display: none;
+    animation: reveal 1s forwards;
 
 
     h1 {
@@ -40,4 +42,9 @@
             color: $primarygray;
         }
     }
+}
+
+.teste-usabilidade-active {
+
+    display: block;
 }

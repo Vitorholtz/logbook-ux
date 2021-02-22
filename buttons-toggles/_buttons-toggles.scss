@@ -1,0 +1,38 @@
+.toggle {
+    width: 100vw;
+    height: 8rem;
+    background-color: $primarygreen;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+    border-bottom: 1px $secondarygreen solid;
+
+    &:hover {
+
+        background-color: $secondarygreen;
+    }
+
+    .fas {
+        font-size: 2rem;
+        margin-left: 1rem;
+        transform: translateY(.4rem);
+        transition: all .4s ease-in-out;
+    }
+
+    .fas-active {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes reveal {
+
+    0%   {opacity:0;}
+    10%  {transform: translateY(50rem);}
+    80% {opacity:1;}
+    100%  {transform: translateY(0rem);}
+}

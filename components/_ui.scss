@@ -4,6 +4,8 @@
     height: auto;
     margin: 16rem auto;
     position: relative;
+    display: none;
+    animation: reveal 1s forwards;
 
     h1 {
 
@@ -55,4 +57,9 @@
 
         width: 100%;
     }
+}
+
+.ui-active {
+
+    display: block;
 }

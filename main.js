@@ -30,3 +30,93 @@ manualSliderBtn5.addEventListener ('click', () => {
 
     document.querySelector('#radio5').checked = true;
 })
+
+// DT toggles
+
+// Empatia
+
+let empathyBtn = document.querySelector('.empathy-toggle');
+let pesquisaSection = document.querySelector('.pesquisa');
+let iconDown1 = document.querySelector('.fas1');
+
+empathyBtn.addEventListener ('click', () => {
+
+    pesquisaSection.classList.toggle('pesquisa-active');
+    iconDown1.classList.toggle('fas-active');
+    
+})
+
+// Entrevistas
+
+let entrevistasBtn = document.querySelector('.interviews-toggle');
+let entrevistasSection = document.querySelector('.entrevistas');
+let iconDown2 = document.querySelector('.fas2');
+
+entrevistasBtn.addEventListener ('click', () => {
+
+    entrevistasSection.classList.toggle('entrevistas-active');
+    iconDown2.classList.toggle('fas-active');
+    
+})
+
+// Personas
+
+let personasBtn = document.querySelector('.personas-toggle');
+let personasSection = document.querySelector('.personas');
+let personasDesires = document.querySelector('.personas-desire');
+let iconDown3 = document.querySelector('.fas3');
+
+personasBtn.addEventListener ('click', () => {
+
+    personasSection.classList.toggle('personas-active');
+    personasDesires.classList.toggle('personas-desires-active');
+    iconDown3.classList.toggle('fas-active');
+})
+
+// Ideaçaõ
+
+let ideacaoBtn = document.querySelector('.ideate-toggle');
+let ideacaoSection = document.querySelector('.ideacao');
+let iconDown4 = document.querySelector('.fas4');
+
+ideacaoBtn.addEventListener ('click', () => {
+
+    ideacaoSection.classList.toggle('ideacao-active');
+    iconDown4.classList.toggle('fas-active');
+})
+
+// Prototipo
+
+let prototipoBtn = document.querySelector('.prototype-toggle');
+let prototipoSection = document.querySelector('.prototipo');
+let iconDown5 = document.querySelector('.fas5');
+
+prototipoBtn.addEventListener ('click', () => {
+
+    prototipoSection.classList.toggle('prototipo-active');
+    iconDown5.classList.toggle('fas-active');
+})
+
+// Testes
+
+let testeBtn = document.querySelector('.test-toggle');
+let testeusabilidadeSection = document.querySelector('.teste-usabilidade');
+let iconDown6 = document.querySelector('.fas6');
+
+testeBtn.addEventListener ('click', () => {
+
+    testeusabilidadeSection.classList.toggle('teste-usabilidade-active')
+    iconDown6.classList.toggle('fas-active');
+})
+
+// UI - Guia de estilo
+
+let uiBtn = document.querySelector('.ui-toggle');
+let uiSection = document.querySelector('.ui');
+let iconDown7 = document.querySelector('.fas7');
+
+uiBtn.addEventListener ('click', () => {
+
+    uiSection.classList.toggle('ui-active');
+    iconDown7.classList.toggle('fas-active');
+})
