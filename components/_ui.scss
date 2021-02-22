@@ -1,0 +1,58 @@
+.ui {
+    
+    width: 100rem;
+    height: auto;
+    margin: 16rem auto;
+    position: relative;
+
+    h1 {
+
+        font-size: 4rem;
+        color: $primarygreen;
+        margin-top: 8rem;
+    }
+
+    p {
+        font-size: 2.2rem;
+        line-height: 1.4;
+        color: $primarygray;
+        margin: 2rem auto;
+    }
+
+    .moodboard {
+
+        width: 100%;
+    }
+
+    .smartphone {
+        position: absolute;
+        top: 5%;
+        left: -36rem;
+        transform: rotate(-15deg);
+        width: 30rem;
+    }
+
+    .notebook{
+        position: absolute;
+        top: 5%;
+        right: -40rem;
+        transform: rotate(15deg);
+        width: 40rem;
+    }
+
+    .mockup{
+
+        width: 100%;
+    }
+}
+
+.bottom-draw {
+
+    width: 80%;
+    margin: auto;
+
+    .personagens {
+
+        width: 100%;
+    }
+}

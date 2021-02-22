@@ -1,0 +1,70 @@
+.prototipo {
+
+    width: 100vw;
+    background-color: $tertiarygray;
+    height: auto;
+    padding: 3rem 0rem;
+    text-align: center;
+
+    h3 {
+
+        font-size: 3rem;
+        margin-top: 4rem;
+        color: $primarygray;
+    }
+
+    .protrow1, .protrow2, .protrow3, .protrow4, .protrow5, .protrow6, .protrow7, .protrow8 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0em 2rem 0em;
+    position: relative;
+    
+
+    .phonescreen {
+
+        height: 50.8rem;
+        width: 25.2rem;
+        background-color: $white;
+        overflow: hidden;
+        box-shadow: -7px 7px 7px 1px rgba(0,0,0,0.1);
+        border-radius: 2rem;
+        margin: 2.5rem;
+    }
+
+    .cefr {
+
+        height: 36rem;
+        width: 62rem;
+        padding: 3rem;
+        border-radius: 2rem;
+        background-color: $white;
+
+    }
+    
+  }
+
+  .protcolumn {
+      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .desktop {
+        width: 80rem;
+        height: auto;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        background-color: $white;
+        overflow: hidden;
+        box-shadow: -7px 7px 7px 1px rgba(0,0,0,0.1);
+
+        img {
+            width: 100%;
+        }
+
+    }
+  }
+}

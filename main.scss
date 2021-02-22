@@ -19,6 +19,30 @@
   @import 'components/definicao';
   @import 'components/personas';
   @import 'components/ideacao';
+  @import 'components/prototipo';
+  @import 'components/teste-usabilidade';
+  @import 'components/ui';
   @import 'helpers/mediaqueries';
 
 
+    //scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primarygreen; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

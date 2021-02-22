@@ -2,7 +2,7 @@
 
     width: 100rem;
     height: auto;
-    margin: 16rem auto;
+    margin: 16rem auto 0rem auto;
     display: flex;
     flex-direction: column;
     
@@ -34,6 +34,41 @@
     .storyboard-1, .storyboard-2, .storyboard-4 {
 
         width: 56rem;
+    }
+
+    .sketch {
+
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .wireframes {
+
+        display: flex;
+        justify-content: space-between;
+        width: 80rem;
+        margin: 4rem auto;
+
+        .button {
+            
+            border: 1px $tertiarygray solid;
+            border-radius: 1rem 1rem 1rem 0rem;
+            box-shadow: -6px 6px 0px 0px rgba(229,236,240,1);
+            padding: 2rem;
+            transition: .4s;
+
+            &:hover {
+
+                box-shadow: -6px 6px 0px 0px $primarygreen;
+
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+        
     }
 
 

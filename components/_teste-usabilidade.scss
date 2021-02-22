@@ -1,0 +1,43 @@
+.teste-usabilidade {
+
+    width: 100rem;
+    height: auto;
+    margin: 16rem auto;
+
+
+    h1 {
+
+        font-size: 4rem;
+        color: $primarygreen;
+        margin-top: 4rem;
+    }
+
+    p {
+        font-size: 2.2rem;
+        line-height: 1.4;
+        color: $primarygray;
+        margin: 2rem auto;
+    }
+
+    .benchmark-card {
+        border: 1px $tertiarygray solid;
+        border-radius: 1rem 1rem 1rem 0rem;
+        box-shadow: -6px 6px 0px 0px rgba(229,236,240,1);
+        padding: 3rem;
+        margin-top: 2rem;
+
+
+        span {
+            font-size: 2rem;
+            font-weight: bold;
+            color: $primarygray;
+        }
+
+        ul {
+            font-size: 2rem;
+            list-style-type: disc;
+            margin-left: 3rem;
+            color: $primarygray;
+        }
+    }
+}
