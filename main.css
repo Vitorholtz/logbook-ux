@@ -1042,10 +1042,12 @@ header .header-container img {
   .personas .slider {
     width: 100%;
     height: 100%;
+    padding-top: 3rem;
   }
   .personas .slider .slides .navigation-auto {
     bottom: initial;
-    top: 2.6rem;
+    top: 3rem;
+    left: 34%;
   }
   .personas .slider .slides .slide {
     padding: 0;
