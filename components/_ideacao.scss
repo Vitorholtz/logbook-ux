@@ -56,8 +56,28 @@
             border-radius: 1rem 1rem 1rem 0rem;
             box-shadow: -6px 6px 0px 0px rgba(229,236,240,1);
             padding: 2rem;
-            margin: 0 2rem;
+            margin: 2rem;
             transition: .4s;
+            position: relative;
+
+            &:first-child::before {
+
+                content: 'Aluno';
+                position: absolute;
+                font-size: 3rem;
+                color: $primarygray;
+                font-weight: bold;
+                top: -5rem;
+            }
+            &:last-child::before {
+
+                content: 'Professor';
+                position: absolute;
+                font-size: 3rem;
+                color: $primarygray;
+                font-weight: bold;
+                top: -5rem;
+            }
 
             &:hover {
 

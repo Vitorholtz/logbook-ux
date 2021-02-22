@@ -619,9 +619,28 @@ header .header-container img {
   -webkit-box-shadow: -6px 6px 0px 0px #e5ecf0;
           box-shadow: -6px 6px 0px 0px #e5ecf0;
   padding: 2rem;
-  margin: 0 2rem;
+  margin: 2rem;
   -webkit-transition: .4s;
   transition: .4s;
+  position: relative;
+}
+
+.ideacao .wireframes .button:first-child::before {
+  content: 'Aluno';
+  position: absolute;
+  font-size: 3rem;
+  color: #727D83;
+  font-weight: bold;
+  top: -5rem;
+}
+
+.ideacao .wireframes .button:last-child::before {
+  content: 'Professor';
+  position: absolute;
+  font-size: 3rem;
+  color: #727D83;
+  font-weight: bold;
+  top: -5rem;
 }
 
 .ideacao .wireframes .button:hover {
@@ -946,7 +965,122 @@ header .header-container img {
 
 @media only screen and (max-width: 1000px) {
   html {
-    font-size: 40.5%;
+    font-size: 42.5%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  header {
+    padding: 3rem 0;
+  }
+  header .header-container .navigation-bar {
+    font-size: 4rem;
+    gap: 5rem;
+  }
+  header .header-container img {
+    width: 5rem;
+  }
+  .hero {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero .hero-img {
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+  }
+  .hero .hero-img .img1 {
+    width: 50%;
+  }
+  .hero .hero-img .img2 {
+    width: 50%;
+  }
+  .hero .description {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  header .header-container {
+    display: none;
+  }
+  .hero {
+    width: 90%;
+  }
+  .project-description {
+    width: 90%;
+  }
+  .project-description .abordagem .abordagem-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project-description .abordagem .abordagem-cards img {
+    width: 80%;
+  }
+  .pesquisa {
+    width: 90%;
+  }
+  .entrevistas {
+    width: 90%;
+  }
+  .personas {
+    width: 100%;
+    padding: 0;
+  }
+  .personas .slider {
+    width: 100%;
+    height: 100%;
+  }
+  .personas .slider .slides .navigation-auto {
+    bottom: initial;
+    top: 2.6rem;
+  }
+  .personas .slider .slides .slide {
+    padding: 0;
+  }
+  .ideacao {
+    width: 90%;
+  }
+  .ideacao .wireframes {
+    width: 75%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ideacao .wireframes .button {
+    padding: 2rem;
+    margin: 4rem 0;
+  }
+  .prototipo .protcolumn .desktop {
+    width: 90%;
+  }
+  .teste-usabilidade {
+    width: 90%;
+  }
+  .ui {
+    width: 90%;
+  }
+  .ui .moodboard-container .smartphone {
+    display: none;
+  }
+  .ui .moodboard-container .notebook {
+    display: none;
+  }
+  .final {
+    width: 90%;
   }
 }
 
