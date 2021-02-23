@@ -39,6 +39,10 @@ a:visited {
   color: inherit;
 }
 
+h1 {
+  line-height: 1.2;
+}
+
 header {
   width: 100vw;
   padding: 1.6rem 0;
@@ -1013,6 +1017,7 @@ header .mobile-version {
     padding: 2rem 0;
     position: fixed;
     top: 0;
+    z-index: 120;
   }
   header .header-container {
     display: none;
@@ -1228,6 +1233,9 @@ header .mobile-version {
   .ideacao {
     width: 90%;
   }
+  .ideacao .storyboard-1, .ideacao .storyboard-2, .ideacao .storyboard-3, .ideacao .storyboard-4, .ideacao .storyboard-5 {
+    width: 90%;
+  }
   .ideacao .wireframes {
     width: 75%;
     -webkit-box-orient: vertical;
@@ -1256,6 +1264,10 @@ header .mobile-version {
   }
   .final {
     width: 90%;
+    margin: 8rem auto;
+  }
+  .bottom-draw {
+    width: 100%;
   }
 }
 
