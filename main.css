@@ -933,7 +933,7 @@ header .mobile-version {
     -webkit-transform: translateY(50rem);
             transform: translateY(50rem);
   }
-  80% {
+  95% {
     opacity: 1;
   }
   100% {
@@ -950,7 +950,7 @@ header .mobile-version {
     -webkit-transform: translateY(50rem);
             transform: translateY(50rem);
   }
-  80% {
+  95% {
     opacity: 1;
   }
   100% {
@@ -977,7 +977,7 @@ header .mobile-version {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 800px) {
   header {
     padding: 3rem 0;
   }
@@ -1210,6 +1210,9 @@ header .mobile-version {
   .pesquisa {
     width: 90%;
   }
+  .pesquisa h2 {
+    font-size: 4rem;
+  }
   .entrevistas {
     width: 90%;
   }
@@ -1229,6 +1232,12 @@ header .mobile-version {
   }
   .personas .slider .slides .slide {
     padding: 0;
+  }
+  .personas-desire {
+    width: 80%;
+  }
+  .personas-desire h2 {
+    font-size: 3rem;
   }
   .ideacao {
     width: 90%;
