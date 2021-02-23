@@ -1102,7 +1102,7 @@ header .mobile-version {
     z-index: 100;
   }
   header .mobile-version .mobile-menu .mobile-navigation-bar li {
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: 'bison';
     position: relative;
     margin-bottom: 2rem;
