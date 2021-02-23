@@ -111,6 +111,10 @@ header .header-container img {
   width: 3rem;
 }
 
+header .mobile-version {
+  display: none;
+}
+
 .white-square-animation {
   position: absolute;
   top: 0;
@@ -1005,11 +1009,180 @@ header .header-container img {
 }
 
 @media only screen and (max-width: 680px) {
+  header {
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+  }
   header .header-container {
     display: none;
   }
+  header .mobile-version {
+    width: 86%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .mobile-version .hamburger {
+    width: 5rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: 101;
+  }
+  header .mobile-version .hamburger .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  header .mobile-version .hamburger .line1 {
+    width: 50%;
+  }
+  header .mobile-version .hamburger .line3 {
+    width: 50%;
+  }
+  header .mobile-version .hamburger-close .line1 {
+    -webkit-transform: translateX(-12rem);
+            transform: translateX(-12rem);
+  }
+  header .mobile-version .hamburger-close .line2 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .mobile-version .hamburger-close .line3 {
+    -webkit-transform: rotate(-45deg) translate(6px, -6px);
+            transform: rotate(-45deg) translate(6px, -6px);
+    width: 100%;
+  }
+  header .mobile-version a {
+    z-index: 101;
+  }
+  header .mobile-version a img {
+    width: 4.2rem;
+  }
+  header .mobile-version .mobile-menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100vw;
+    background: #1d1d1f;
+    padding: 5rem;
+    -webkit-transition: .4s;
+    transition: .4s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #FFFFFF;
+    z-index: 100;
+  }
+  header .mobile-version .mobile-menu .mobile-navigation-bar li {
+    font-size: 7rem;
+    font-family: 'bison';
+    position: relative;
+    margin-bottom: 2rem;
+    list-style: none;
+  }
+  header .mobile-version .mobile-menu .mobile-navigation-bar li::before {
+    content: '';
+    width: 3rem;
+    height: 2px;
+    background-color: #5A66FF;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  header .mobile-version .mobile-menu .mobile-navigation-bar li:hover {
+    color: #5A66FF;
+  }
+  header .mobile-version .mobile-menu .mobile-navigation-bar li:hover::after {
+    background-color: #FFFFFF;
+  }
+  header .mobile-version .mobile-menu h3 {
+    font-size: 6rem;
+    font-family: 'Bison';
+    margin: 6rem 0 0 0;
+    border-top: 2px #343336 solid;
+    position: relative;
+  }
+  header .mobile-version .mobile-menu h3::before {
+    content: '';
+    width: 3rem;
+    height: 2px;
+    background-color: #5A66FF;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  header .mobile-version .mobile-menu h3 span {
+    color: #5A66FF;
+  }
+  header .mobile-version .mobile-menu img {
+    margin-top: 2rem;
+    width: 75%;
+  }
+  header .mobile-version .mobile-menu .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: initial;
+    padding: 0;
+    gap: 6rem;
+    margin-top: 6rem;
+  }
+  header .mobile-version .mobile-menu .social-icons a i {
+    font-size: 3.8rem;
+  }
+  header .mobile-version .mobile-menu-active {
+    left: 0%;
+  }
   .hero {
     width: 90%;
+  }
+  .hero .description .logo {
+    width: 35%;
+  }
+  .hero .description p {
+    font-size: 2.6rem;
+  }
+  .hero .description ul {
+    font-size: 2.6rem;
+    margin-left: 4rem;
+  }
+  .hero .hero-img .img1 {
+    width: 90%;
+  }
+  .hero .hero-img .img2 {
+    display: none;
   }
   .project-description {
     width: 90%;
@@ -1027,7 +1200,7 @@ header .header-container img {
             align-items: center;
   }
   .project-description .abordagem .abordagem-cards img {
-    width: 80%;
+    width: 90%;
   }
   .pesquisa {
     width: 90%;
