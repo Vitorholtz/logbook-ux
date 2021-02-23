@@ -1031,8 +1031,8 @@ header .mobile-version {
             align-items: center;
   }
   header .mobile-version .hamburger {
-    width: 5rem;
-    height: 3rem;
+    width: 4.6rem;
+    height: 2.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1076,7 +1076,7 @@ header .mobile-version {
     z-index: 101;
   }
   header .mobile-version a img {
-    width: 4.2rem;
+    width: 3.8rem;
   }
   header .mobile-version .mobile-menu {
     position: absolute;
