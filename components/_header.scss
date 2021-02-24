@@ -56,10 +56,22 @@ header {
               cursor: crosshair;
           }
       }
+
+      .uxui {
+
+        color: $purple;
+        pointer-events: none;
+
+        &::after {
+
+          width: 100%;
+        }
+      }
     }
   
       img {
         width: 3rem;
+        transform: translateY(.4rem);
       }
     }
 
@@ -84,6 +96,4 @@ header {
       from {transform: translateX(0);}
       to {transform: translateX(-200rem);}
     }
-  
-  
   }

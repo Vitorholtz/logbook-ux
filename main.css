@@ -107,8 +107,19 @@ header .header-container .navigation-bar li a {
   cursor: crosshair;
 }
 
+header .header-container .navigation-bar .uxui {
+  color: #5A66FF;
+  pointer-events: none;
+}
+
+header .header-container .navigation-bar .uxui::after {
+  width: 100%;
+}
+
 header .header-container img {
   width: 3rem;
+  -webkit-transform: translateY(0.4rem);
+          transform: translateY(0.4rem);
 }
 
 header .mobile-version {
