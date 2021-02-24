@@ -98,10 +98,6 @@ header .header-container .navigation-bar li::after {
   transition: all .3s;
 }
 
-header .header-container .navigation-bar li:hover {
-  color: #5A66FF;
-}
-
 header .header-container .navigation-bar li:hover::after {
   background-color: #FFFFFF;
   width: 100%;
@@ -1161,7 +1157,7 @@ header .mobile-version {
     display: flex;
     position: initial;
     padding: 0;
-    gap: 6rem;
+    gap: 4rem;
     margin-top: 6rem;
   }
   header .mobile-version .mobile-menu .social-icons a i {
@@ -1278,6 +1274,18 @@ header .mobile-version {
   .bottom-draw {
     width: 100%;
   }
+}
+
+.stickhome img {
+  width: 4em;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0em;
+  right: 4%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: crosshair;
 }
 
 /* width */
