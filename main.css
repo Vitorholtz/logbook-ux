@@ -113,7 +113,7 @@ header .header-container .navigation-bar .uxui {
 }
 
 header .header-container .navigation-bar .uxui::after {
-  width: 100%;
+  display: none;
 }
 
 header .header-container img {
