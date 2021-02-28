@@ -216,6 +216,7 @@ header .mobile-version {
 
 .project-description .description h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
   color: #128360;
 }
 
@@ -227,15 +228,19 @@ header .mobile-version {
 }
 
 .project-description .logo-simbolo {
-  width: 10rem;
+  width: 16rem;
   margin: 6rem 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border-radius: 10rem;
+  -webkit-box-shadow: 0px 9px 6px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 9px 6px -5px rgba(0, 0, 0, 0.4);
 }
 
 .project-description .abordagem h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
   color: #128360;
 }
 
