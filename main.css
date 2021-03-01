@@ -267,7 +267,7 @@ header .mobile-version {
 .pesquisa {
   width: 100rem;
   height: auto;
-  margin: 16rem auto;
+  margin: 8rem auto;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -279,6 +279,7 @@ header .mobile-version {
 
 .pesquisa h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
   color: #128360;
   margin-top: 4rem;
 }
@@ -374,7 +375,7 @@ header .mobile-version {
 .entrevistas {
   width: 100rem;
   height: auto;
-  margin: 16rem auto;
+  margin: 8rem auto;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -386,6 +387,7 @@ header .mobile-version {
 
 .entrevistas h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
   color: #128360;
 }
 
@@ -580,7 +582,7 @@ header .mobile-version {
 .ideacao {
   width: 100rem;
   height: auto;
-  margin: 16rem auto 0rem auto;
+  margin: 8rem auto 0rem auto;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -592,6 +594,7 @@ header .mobile-version {
 
 .ideacao h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
   color: #128360;
 }
 
@@ -772,7 +775,7 @@ header .mobile-version {
 .teste-usabilidade {
   width: 100rem;
   height: auto;
-  margin: 16rem auto;
+  margin: 8rem auto;
   display: none;
   -webkit-animation: reveal 1s forwards;
           animation: reveal 1s forwards;
@@ -780,6 +783,7 @@ header .mobile-version {
 
 .teste-usabilidade h1 {
   font-size: 4rem;
+  margin-bottom: 1rem;
   color: #128360;
   margin-top: 4rem;
 }
@@ -882,7 +886,7 @@ header .mobile-version {
 .final {
   width: 100rem;
   height: auto;
-  margin: 16rem auto;
+  margin: 8rem auto;
 }
 
 .final h1 {

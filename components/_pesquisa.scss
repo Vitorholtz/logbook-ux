@@ -2,7 +2,7 @@
 
     width: 100rem;
     height: auto;
-    margin: 16rem auto;
+    margin: 8rem auto;
     display: none;
     flex-direction: column;
     animation: reveal 1s forwards;
@@ -11,6 +11,7 @@
     h1 {
 
         font-size: 4rem;
+        margin-bottom: 1rem;
         color: $primarygreen;
         margin-top: 4rem;
     }
